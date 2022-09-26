@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>Change school</h1>
+<h3>If you want to change your school fill the reason, choose new school and press the button</h3>
+<form action="{% url 'change' %}">
+    <textarea name="usertext" rows="20" cols="50"></textarea>
+    <br>
+    <input type="submit" value="Change" />
+</form>
+{% endblock %}

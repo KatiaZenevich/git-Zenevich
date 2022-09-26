@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>Choose new school</h1>
+<h2>You have chosen "{{ usertext }}"</h2>
+
+<form action="{% url 'confirm' %}">
+    <br>
+    <input type="submit" value="Confirm" />
+</form>
+
+{% endblock %}
